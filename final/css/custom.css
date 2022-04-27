@@ -1,0 +1,231 @@
+:root{
+    --red:rgb(209,40,37);
+    --navy:rgb(33,68,124);
+  }
+  *{
+      margin:0;
+      padding:0;
+  }
+  body{
+      margin:2em;
+  }
+  header{
+      color:var(--red);
+      border:thick solid var(--red);
+      text-align: center;
+      padding:1em;
+      margin:.25em;
+  }
+  #allie{
+      font-family: 'Dancing Script', cursive;
+      font-size:7em;
+  }
+  #donut{
+      font-size:5em;
+  }
+  #donut,header h2, header h4{
+      font-family: 'Outfit', sans-serif;
+  }
+  nav{
+      background-color:var(--navy);
+      padding:1em;
+      font-family: 'Outfit', sans-serif;
+  }
+  nav a{
+      color:white;
+      text-decoration: none;
+      padding:1em;
+  }
+  nav a:hover{
+      background-color:var(--red);
+      color:white;
+  }
+  .active{
+      background-color:var(--red);
+      color:white;
+      padding:1em;
+  }
+  .grid-layout{
+      display:grid;
+      grid-template-columns: 50% 50%;
+      margin:1em;
+  }
+  .grid{
+      display:grid;
+      margin:1em;
+      padding:1em;
+      border:thick solid var(--red);
+  }
+  .menu{
+      border:thick solid var(--navy);
+      margin-bottom:1em;
+  }
+  th,td{
+      padding:.5em;
+      font-size:1em;
+  }
+  tr:nth-child(odd)
+  {
+      background: var(--navy);
+      color:white;
+  }
+  tr:nth-child(even)
+  {
+      background: white;
+      color:var(--navy);
+  }
+  caption{
+      color:var(--navy);
+      font-size:2.5em;
+  }
+  .fonts h1, .fonts h4{
+      text-align: center;
+  }
+  img{
+      max-width:60%;
+      margin:1em;
+  }
+  #index img{
+      max-width:80%;
+  }
+  table{
+      width:80%;
+      margin-left:auto;
+      margin-right:auto;
+      border:thick solid var(--red);
+      margin-bottom:1em;
+      font-family: 'Outfit', sans-serif;
+  }
+  .fonts h1{
+      font-family: 'Dancing Script', cursive;
+      color:var(--red);
+      font-size:3em;
+      font-weight:bold;
+  }
+  .fontsform legend{
+      font-family: 'Dancing Script', cursive;
+      color:var(--navy);
+      font-size:2em;
+      font-weight:bold;
+  }
+  .article-header{
+    font-family: 'Dancing Script', cursive;
+    color:var(--red);
+    font-size:3em;
+    font-weight:bold;
+    text-align:center;
+}
+.debug p{
+    color:var(--navy);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+  .fonts h2{
+      color:var(--navy);
+      font-family: 'Dancing Script', cursive;
+      font-size:2em;
+      font-weight:bold;
+  }
+  .fonts p{
+      color:var(--red);
+      font-family: 'Outfit', sans-serif;
+  }
+  .fontsform p{
+    color:var(--navy);
+    font-family: 'Outfit', sans-serif;
+}
+  .fonts h4{
+      color:var(--navy);
+      font-family: 'Outfit', sans-serif;
+  }
+  .fonts h5{
+      color:var(--navy);
+      font-family: 'Outfit', sans-serif;
+  }
+  .fonts h3{
+      color:var(--red);
+      font-family: 'Outfit', sans-serif;
+  }
+  footer{
+      background-color:var(--navy);
+      color:white;
+      padding:2em;
+  }
+  footer a,footer a:visited{
+      color:white;
+  }
+  footer a:hover{
+      color:var(--red);
+  }
+  figure a,figure a:visited{
+      color:var(--navy);
+  }
+  figure{
+      text-align: center;
+  }
+  main p{
+      font-family: 'Outfit', sans-serif;
+      color:var(--navy);
+  }
+footer p{
+    font-family: 'Outfit', sans-serif;
+}
+  .form1{
+      border:thick solid var(--navy);
+      margin: 1em;
+  }
+  .contact{
+      border:thick solid var(--red);
+      margin: 1em;
+      padding: 1em;
+  }
+  .radio{
+      border:thick solid var(--red);
+      margin: 1em;
+      padding: 1em;
+  }
+  .checkbox{
+      border:thick solid var(--red);
+      margin: 1em;
+      padding: 1em;
+  }
+  .listbox{
+      border:thick solid var(--red);
+      margin: 1em;
+      padding: 1em;
+  }
+  .textarea{
+      border:thick solid var(--red);
+      margin: 1em;
+      padding: 1em;
+  }
+  .buttons{
+      text-align: center;
+      margin: 1em;
+      padding: 1em;
+      border:none;
+  }
+  .buttons input{
+    width: 80%;
+    color:var(--red);
+    font-family: 'Outfit', sans-serif;
+    font-size:2em;
+    border:thin solid var(--navy);
+    border-radius: 2%;
+}
+#history main h2{
+    text-align:center;
+    color:var(--red);
+    font-family: 'Dancing Script', cursive;
+    font-size:2.5em;
+}
+#history img{
+    max-width:100%;
+    margin-right:auto;
+    margin-left:auto;
+}
+#index p{
+    max-width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}

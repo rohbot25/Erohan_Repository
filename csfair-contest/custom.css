@@ -1,0 +1,694 @@
+/*Custom css for csfair
+*by evan rohan
+*9-29-21
+*/
+/*<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">*/
+
+
+*{
+    margin:0;
+    
+}
+/*Variables*/
+:root
+{
+    --hover-color:rgb(255, 215, 0);
+    --primary-color: rgba(0,0,0,.9);
+    --green:rgb(0,100,0);
+    --green-bg:rgba(0,153,51,.8);
+    --secondary-color: rgb(23, 153, 58);
+    --main-color: white;
+    --prize-border:medium solid var(--green);
+    --prize-width:25%;
+    --lightgrey-bg:rgba(211,211,211,.9);
+    --advanced-app-color: rgb(51, 204, 51);
+    --advanced-ml-color: rgb(125, 204, 125);
+    --advanced-pro-color: rgb(200, 255, 200);
+    --research-color: rgb(255,165,0);
+    --intermediate-pro-color: rgb(204, 102, 255);
+    --intermediate-web-color: rgb(102, 153, 255);
+    --beginner-pro-color: rgb(255, 155, 150);
+    --beginner-web-color: rgb(255, 255, 102);
+}
+/*body*/
+body
+{
+    font-family: 'Source Code Pro', monospace;
+    background:url(background.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin:1em;
+}
+a.active,main h2,a.btn,a.btn:visited
+{
+    color:var(--hover-color);
+}
+a.btn:hover
+{
+    color:white;
+}
+a.btn
+{
+    margin-left:2%;
+}
+p.lead
+{
+    margin-left:2%;
+}
+/*nav*/
+nav
+{
+    text-align:center;
+    background-color:var(--primary-color);
+    padding:1em;
+}
+nav a img
+{
+    width:8%;
+}
+nav a
+{
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:1.25em;
+    
+}
+nav a:link
+{
+    text-align: center;
+    padding:1em 2em;
+}
+nav a:hover
+{
+    border:medium solid white;
+    color:var(--hover-color);
+}
+nav a:active
+{
+    background-color:white;
+}
+/*header*/
+body > header
+{
+    padding-bottom:3%;
+}
+header
+{
+   background-color:var(--primary-color);
+    color:white;
+    text-align: center;
+    display:block;
+    padding:.5em;
+}
+header a
+{
+    color:white;
+    text-decoration: none;
+}
+header a:hover
+{
+    text-decoration:none;
+    color:var(--hover-color);
+}
+h1
+{
+    font-size:3em;
+}
+h2
+{
+    font-size:2em;
+}
+/*main*/
+#index main article img,#judges img[src='images/judges.png'],#projects main img
+{
+    width:80%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:5em;
+}
+
+main
+{
+    background-color:var(--primary-color);
+    color:white;
+}
+#index .lead
+{
+    text-indent:5%;
+    text-align:left;
+}
+#index main article p
+{
+    text-align:center;
+}
+/*winners-wrapper*/
+#index .winners-wrapper p
+{
+    text-align:left;
+    padding:.25em;
+    /*float:left;*/
+}
+p.prize-row
+{
+    color:var(--secondary-color);
+}
+.winners-wrapper
+{
+    margin-left:5%;
+    margin-right:5%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+.winners-wrapper > section
+{
+    display:grid;
+    border:var(--prize-border);
+     margin-left:2%;
+    margin-bottom:2%;
+    
+}
+.winners-wrapper h3
+{
+    color:var(--hover-color);
+    text-align: center;
+}
+.disclaimer
+{
+    font-size:x-small;
+}
+/*rules*/
+main article + article
+{
+    border-top:thick solid var(--green);
+    background-color:var(--lightgrey-bg);
+    color:black;
+}
+main article + article h2,section#main h2 + h2
+{
+    text-align: center;
+    font-size:3em;
+    color:white;
+}
+#about ol,#index ol,section#main ol
+{
+    list-style: none;
+    counter-reset: my-counter;
+    padding-bottom: 1em;
+}
+#about ol li,#index ol li,section#main ol li
+{
+    counter-increment: my-counter;
+}
+#index ol li::before,#about ol li::before,section#main ol li::before
+{
+    content: counter(my-counter)". ";
+    color:white;
+}
+#index ol li li::before,#about ol li li::before,section#main ol li li::before
+{
+    content:"○ ";
+    color:white;
+}
+ol li li
+{
+    list-style: none;
+    counter-reset: my-counter;
+}
+ol a
+{
+    color:white;
+}
+ol a:hover
+{
+    color:black;
+}
+
+/*footer*/
+footer
+{
+    background-color: rgb(0,0,0);
+    color:white;
+    padding:.5em;
+    margin-top:1em;
+}
+footer a
+{
+    color:var(--hover-color);
+}
+footer a:visited
+{
+    color:var(--hover-color);
+}
+footer a:hover
+{
+    color:white;
+}
+/*about page*/
+#about h2,#judges h2
+{
+    text-align: center;
+    font-size: 2em;
+}
+#about main article section+section h2
+{
+    text-align:left;
+    margin-left:2%;
+}
+#about main .page-title
+{
+    font-size:3em;
+}
+main
+{
+    padding-top: 1.5em;
+    border-top: thick solid var(--green);
+}
+#about main img
+{
+    width:30%;
+    display:inline-block;
+    margin-bottom:3em;
+    border-radius:2em;
+    padding:.5em;
+}
+#about main article section
+{
+    text-align: center;
+}
+#about main article section p
+{
+    text-align:left;
+    margin-left:2%;
+}
+#about main article section > section p
+{
+    text-align:center;
+}
+#about main article section h2
+{
+    font-size:2.5em;
+}
+#about main article section + section+section+section
+{
+    border-top:thick solid var(--green);
+    background-color:var(--lightgrey-bg);
+    color:black;
+    text-align: left;
+     border-bottom:thick solid var(--green);
+}
+#about main article section + section+section+section h2
+{
+    text-align:center;
+    color:white;
+}
+#about main article section + section+section+section+section
+{
+    border-top:none;
+    border-bottom:none;
+    text-align:left;
+    background-color:rgb(0,0,0,.01);
+    color:white;
+    padding-bottom:2%;
+    margin-bottom:1%;
+    padding-top:2%;
+}
+#about main article section + section+section+section+section p
+{
+    text-indent:3%;
+}
+#about main article section + section+section+section+section h2
+{
+    color:var(--hover-color);
+}
+iframe
+{
+    width:80%;
+    margin-bottom:2em;
+}
+/*judges page*/
+#judges main h2,#projects main h2
+{
+    font-size:2.5em;
+}
+#judges main a:hover
+{
+    color:white;
+}
+#judges main a
+{
+    color:var(--hover-color);
+}
+#judges main a:visited
+{
+    color:var(--hover-color);
+}
+#judges main h3,#judges main h4
+{
+    font-size:1.5em;
+}
+#judges main p
+{
+    text-indent:5%;
+}
+#judges main img
+{
+    margin-top:2em;
+    margin-bottom:2em;
+}
+#judges main article section
+{
+    border:thick solid var(--green);
+    padding:2em;
+    margin:1em;
+}
+#judges main article section p
+{
+    
+}
+#judges main article section img
+{
+
+    float:left;
+    max-height:200px;
+    border-radius:3em;
+    margin:1em;
+    margin-left:0;
+    
+}
+#judges main article section h2
+{
+    color:var(--hover-color);
+}
+#judges main article > section
+{
+    height:20em;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#judges main
+{
+    padding:2%;
+}
+/*sponsors page*/
+ol.list-unstyled
+{
+    list-style: none;
+}
+#sponsors main img
+{
+    width:60%;
+    display:block;
+    border-radius:5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sponsors main h3
+{
+    font-size:2em;
+    text-align: center;
+}
+#sponsors main article h2
+{
+    font-size:2.5em;
+    text-align: center;
+    margin-bottom:.5em;
+}
+#sponsors img[src='images/sponsors.png']
+{
+    margin-bottom:1em;
+}
+#sponsors main article p
+{
+    text-indent: 5%;
+}
+#sponsors ol img
+{
+    border-radius:0;
+    max-width:100%;
+}
+p.lead
+{
+    margin-bottom:1em;
+}
+#sponsors ol
+{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    border:thick solid var(--green);
+    margin-left:2%;
+    margin-right:2%;
+    padding:.5em;
+    background-color:white;
+    justify-content: space-between;
+    
+    
+    
+}
+#sponsors ol > li
+{
+    display:grid;
+    width:100%;
+    padding:.5em;
+    
+}
+h3.Catamount,h3.Bronze,h3.Silver,h3.Gold
+{
+    color:var(--hover-color);
+}
+#sponsors .button
+{
+    color:var(--hover-color);
+    
+}
+#sponsors .button:hover
+{
+    color:white;
+}
+#sponsors .button:visited
+{
+    color:var(--hover-color);
+}
+#sponsors .lead a
+{
+    color:var(--hover-color);
+}
+#sponsors .lead a:visited,#sponsors .lead a:hover,#sponsors a:visited,#sponsors li a:hover
+{
+    color:white;
+}
+#sponsors main article section + section
+{
+    padding-bottom:6em;
+}
+#sponsors main article section
+{
+    margin-left:2%;
+    margin-right:2%;
+}
+/*sponsors form*/
+#sponsorsForm .page-title
+{
+    text-align: center;
+}
+#sponsorsForm main
+{
+    padding-left:1em;
+}
+input[type='text'],input[type='email'],textarea
+{
+    margin:.25em;
+}
+input[type='submit']
+{
+    color:black;
+    height:2em;
+}
+legend
+{
+    color:var(--hover-color);
+}
+#sponsorsForm main a,#sponsorsForm main a:visited
+{
+    color:var(--hover-color);
+}
+.errors
+{
+    color:red;
+    background-color:white;
+}
+section.submitted h1
+{
+    font-size:2em;
+    color:var(--hover-color);
+}
+/*project page*/
+#projects main h2,#projects p.lead
+{
+    text-align: center;
+}
+#projects section
+{
+    margin:.5em;
+}
+#projects #legend a,#legend a:visited,#projects .single-project-list a:visited,#schedule #legend a
+{
+    color:white;
+    text-decoration:none;
+}
+#projects .lead .button{
+    padding-left:.5em
+}
+#legend p
+{
+    padding:.25em;
+    margin:.25em;
+}
+.advanced-app{border:medium solid var(--advanced-app-color);}
+.advanced-ml{border:medium solid var(--advanced-ml-color);}
+.advanced-pro{border:medium solid var(--advanced-pro-color);}
+.research{border:medium solid var(--research-color);}
+.intermediate-pro{border:medium solid var(--intermediate-pro-color);}
+.intermediate-web{border:medium solid var(--intermediate-web-color);}
+.beginner-pro{border:medium solid var(--beginner-pro-color);}
+.beginner-web{border:medium solid var(--beginner-web-color);}
+.advanced-app .dot{background-color:var(--advanced-app-color);}
+.advanced-ml .dot{background-color:var(--advanced-ml-color);}
+.advanced-pro .dot{background-color:var(--advanced-pro-color);}
+.research .dot{background-color:var(--research-color);}
+.intermediate-pro .dot{background-color:var(--intermediate-pro-color);}
+.intermediate-web .dot{background-color:var(--intermediate-web-color);}
+.beginner-pro .dot{background-color:var(--beginner-pro-color);}
+.beginner-web .dot{background-color:var(--beginner-web-color);}
+#projects #legend .advanced-app a:hover{color:var(--advanced-app-color);}
+#projects #legend .advanced-ml a:hover{color:var(--advanced-ml-color);}
+#projects #legend .advanced-pro a:hover{color:var(--advanced-pro-color);}
+#projects #legend .research a:hover{color:var(--research-color);}
+#projects #legend .intermediate-pro a:hover{color:var(--intermediate-pro-color);}
+#projects #legend .intermediate-web a:hover{color:var(--intermediate-web-color);}
+#projects #legend .beginner-pro a:hover{color:var(--beginner-pro-color);}
+#projects #legend .beginner-web a:hover{color:var(--beginner-web-color);}
+#legend p.highlight{background-color:white;color:black;}
+#schedule #legend .advanced-app a:hover{color:var(--advanced-app-color);}
+#schedule #legend .advanced-ml a:hover{color:var(--advanced-ml-color);}
+#schedule #legend .advanced-pro a:hover{color:var(--advanced-pro-color);}
+#schedule #legend .research a:hover{color:var(--research-color);}
+#schedule #legend .intermediate-pro a:hover{color:var(--intermediate-pro-color);}
+#schedule #legend .intermediate-web a:hover{color:var(--intermediate-web-color);}
+#schedule #legend .beginner-pro a:hover{color:var(--beginner-pro-color);}
+#schedule #legend .beginner-web a:hover{color:var(--beginner-web-color);}
+
+/*schedule*/
+#schedule main,#projects main
+{
+    padding-left:2%;
+    padding-right:2%;
+}
+#schedule figure img
+{
+    width:80%;
+    border-radius:5em;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:2%;
+}
+figcaption
+{
+    color:var(--hover-color);
+    font-size:2em;
+}
+#schedule figure
+{
+    text-align:center;
+}
+#schedule main a,#schedule main a:visited,#projects main a, #projects main a:visited
+{
+    color:var(--hover-color);
+}
+#schedule main a:hover,#projects main a:hover
+{
+    color:white;
+}
+#schedule th
+{
+    font-size:1.25em;
+}
+/*registerForm*/
+section#main
+{
+    background-color: var(--primary-color);
+    color:white;
+    padding-left:2%;
+    padding-right:2%;
+}
+section#main h2 + h2,section#main ol,div.col-md-4 h2
+{
+    background-color:var(--lightgrey-bg);
+}
+
+section#main h2 + h2,div.col-md-4 h2
+{
+    border-top:thick solid var(--green);
+}
+section#main ol
+{
+    border-bottom:thick solid var(--green);
+    color:black;
+}
+section#main h1,section#main h1 + h2
+{
+    color:var(--hover-color);
+    text-align: center;
+}
+section#main h2
+{
+    text-align: center;
+}
+body#form header+p
+{
+    background-color: var(--primary-color);
+    color:white;
+    padding-left:5%
+}
+/*registration*/
+#register-voter span
+{
+    color:var(--green);
+}
+#register-voter main
+{
+    border:3em solid var(--primary-color);
+}
+#register-voter article
+{
+    border:2em solid var(--green);
+}
+@media only screen and (max-width:700px) {
+    .winners-wrapper{
+        display:block;
+    }
+    #schedule main article
+    {
+        overflow-x:auto;
+    }
+}
+@media only screen and (max-width:1000px){
+     #judges main article section p
+    {
+        white-space:nowrap;
+        overflow:scroll;
+    }
+    #judges main article section img
+    {
+        max-height:100px;
+    }
+    #judges main article section
+    {
+        padding:0;
+    }
+}

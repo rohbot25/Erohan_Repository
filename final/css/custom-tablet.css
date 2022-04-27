@@ -1,0 +1,10 @@
+nav{
+    display:flex;
+    flex-direction:column;
+}
+#history .grid-layout{
+    display:block;
+}
+#menu img{
+    max-width:80%;
+}
