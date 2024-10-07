@@ -1,6 +1,5 @@
 import pygame
 import sys
-import numpy
 from boid import BOID
 import constants as c
 
